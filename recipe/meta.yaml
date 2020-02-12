@@ -1,6 +1,6 @@
 {% set name = "python-gmatnonlinearelastic" %}
-{% set version = "0.0.4" %}
-{% set sha256 = "faaa3f1e8fa8d8b121e4164e63c1fa0c6b2d109ee8f1be90f2d399ec8df42f3a" %}
+{% set version = "0.1.0" %}
+{% set sha256 = "7a2d13c861ce66c82d1498a18081f38920424d19c51e022b6c85ab604f27575e" %}
 
 package:
   name: {{ name|lower }}
