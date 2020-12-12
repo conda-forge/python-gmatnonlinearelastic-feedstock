@@ -1,6 +1,6 @@
 {% set name = "python-gmatnonlinearelastic" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "7a2d13c861ce66c82d1498a18081f38920424d19c51e022b6c85ab604f27575e" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "e46aeae19c29e81481ace56f85b0e0c20d0edd1241b2f03938bba80f73d837f7" %}
 
 package:
   name: {{ name|lower }}
@@ -11,9 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  skip: True  # [win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  skip: true  # [win]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -35,8 +35,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Non-linear elastic material model (Python wrapper).'
-  description: 'Non-linear elastic material model (Python wrapper).'
+  summary: Non-linear elastic material model (Python wrapper).
+  description: Non-linear elastic material model (Python wrapper).
   doc_url: https://github.com/tdegeus/GMatNonLinearElastic
   dev_url: https://github.com/tdegeus/GMatNonLinearElastic
 
