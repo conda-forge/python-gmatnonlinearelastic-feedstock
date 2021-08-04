@@ -13,6 +13,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<39 and osx and not x86_64]
 
 requirements:
   build:
