@@ -1,6 +1,6 @@
 {% set name = "python-gmatnonlinearelastic" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "e46aeae19c29e81481ace56f85b0e0c20d0edd1241b2f03938bba80f73d837f7" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "1850bc4629d564740dd74ef7fa01fa2459721f20ec3221096b276318b699ac19" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<39 and osx and not x86_64]
 
